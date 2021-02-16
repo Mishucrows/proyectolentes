@@ -1,5 +1,6 @@
 body{
-   background-color: rgb(221, 221, 221);
+    background: rgb(54,167,175);
+    background: linear-gradient(0deg, rgba(54,167,175,1) 12%, rgba(54,97,175,1) 100%);
 }
 .container{
     width: 70%;
@@ -9,4 +10,8 @@ body{
 }
 .h1{
     padding: 1.5em 0em;
+    text-align: center;
+}
+.btn-primary , .btn-dark{
+    width: 20%;
 }

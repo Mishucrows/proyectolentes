@@ -6,7 +6,7 @@
 }
 .franja{
     padding: 6px;
-    background-color: #e58900;
+
 }
 header{
     height: 100px;
@@ -19,7 +19,7 @@ header{
     font-weight:600;
 }
 #letra:hover{
-    color:  #e58900;
+    color:  #00b0e5;
 }
 #letra svg{
     width: 20px;
