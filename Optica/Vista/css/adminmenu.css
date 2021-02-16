@@ -27,3 +27,6 @@ header{
 .logo{
     margin-left: 2em;
 }
+body    {
+    overflow-x: hidden;
+}
