@@ -1,19 +1,29 @@
-.{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
 .franja{
-    padding: 25px;
+    padding: 6px;
     background-color: #e58900;
 }
 header{
-    height: 140px;
+    height: 100px;
     background-color:#212529;
 }
-a{
+#letra{
     color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
+    margin : 1em 2em;
+    font-weight:600;
+}
+#letra:hover{
+    color:  #e58900;
+}
+#letra svg{
+    width: 20px;
+}
+.logo{
+    margin-left: 2em;
 }
