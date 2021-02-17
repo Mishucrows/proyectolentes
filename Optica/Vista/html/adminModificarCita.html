@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/adminmenu.css">
     <link rel="stylesheet" href="../css/directorios.css">
     <link rel="stylesheet" href="../css/agregar.css">
-    <title>Agregar Usuarios</title>
+    <title>Modificar cita</title>
 </head>
 
 <body>
@@ -20,7 +20,21 @@
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                    <div class="h1">EDITAR USUARIO # <span> 1234</span></div>
+                    <div class="h1">MODIFICAR CITAS</div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer01">ID:</label>
+                            <!-- is-valid es una clase para validar campos -->
+                            <input type="text" class="form-control " id="validationServer01" value="1234_ejemplo"
+                                disabled>
+                            <div class="valid-feedback">
+                                Es correcto
+                            </div>
+                            <div class="invalid-feedback">
+                                Es Incorrecto
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
@@ -49,13 +63,13 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServerUsername">Nombre de Usuario</label>
+                            <label for="validationServerUsername">Fecha de consulta:</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUsername"
-                                    placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                                    placeholder="dd/mm/aa" aria-describedby="inputGroupPrepend3" required>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -65,8 +79,9 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">Ciudad:</label>
-                            <input type="text" class="form-control" id="validationServer03" placeholder="City" required>
+                            <label for="validationServer03">Motivo de consulta:</label>
+                            <input type="text" class="form-control" id="validationServer03" placeholder="Motivo"
+                                required>
                             <div class="valid-feedback">
                                 Correcto
                             </div>
@@ -75,30 +90,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer04">País</label>
-                            <input type="text" class="form-control" id="validationServer04" placeholder="State"
-                                required>
-                            <div class="valid-feedback">
-                                Correcto
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor ingrese un país valido.
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer05">opcional</label>
-                            <input type="text" class="form-control " id="validationServer05" placeholder="Zip" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid zip.
-                            </div>
-                        </div>
-                    </div>
+                    <br>
+                    <br>
+
 
         </div>
-        <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminusuarios.html">CANCELAR</a>
+        <button id="btnG" class="btn btn-primary" type="submit">GUARDAR DATOS</button>
+        <a class="btn btn-dark" href="adminCitas.html">CANCELAR</a>
         </form>
     </div>
     </div>

@@ -9,24 +9,25 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/adminmenu.css">
     <link rel="stylesheet" href="../css/directorios.css">
-    <title>Administrar Usuarios</title>
+    <link rel="stylesheet" href="../css/adminListaCita.css">
+    <title>Administrar Citas</title>
 
 </head>
 
 <body>
     <div id="menu"></div>
     <div class="container">
-        <div class="h1">DIRECTORIO DE PRODUCTOS</div>
+        <div class="h1">REGISTRO DE CITAS</div>
         <div class="row justify-content-end">
-            <button type="button" class="btn btn-primary col-2">
+            <a href="" type="button" class="btn btn-primary col-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                     <path
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
-                AGREGAR</button>
-            <button type="button" class="btn btn-dark col-2">
+                AGREGAR</a>
+            <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
@@ -40,10 +41,10 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Apellido:</th>
                         <th scope="col">Nombre:</th>
-                        <th scope="col">Tipo:</th>
-                        <th scope="col">Precio:</th>
-                        <th scope="col">Marca:</th>
+                        <th scope="col">Fecha:</th>
+                        <th scope="col">Correo:</th>
                         <th scope="col">Opciónes:</th>
                     </tr>
                 </thead>
@@ -52,10 +53,10 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Otto</td>
+                        <td>20/03/2021</td>
+                        <td>@MO</td>
                         <td>
-                            <a href="" class="btn btn-light">
+                            <a href="adminModificarCita.html" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -79,10 +80,10 @@
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Otto</td>
+                        <td>21/03/2021</td>
+                        <td>@JT</td>
                         <td>
-                            <a href="" class="btn btn-light">
+                            <a href="adminModificarCita.html" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -106,10 +107,10 @@
                         <th scope="row">3</th>
                         <td>Larry</td>
                         <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Otto</td>
+                        <td>21/03/2021</td>
+                        <td>@LT</td>
                         <td>
-                            <a href="" class="btn btn-light">
+                            <a href="adminModificarCita.html" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -132,8 +133,8 @@
                 </tbody>
             </table>
         </div>
-
     </div>
+
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script>
         $("#menu").load("adminmenu.html header");
@@ -141,6 +142,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+        <!-- Button trigger modal -->
+
+  
+  <!-- Modales -->
+  <!-- Modal para buscar -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Buscar Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container">
+          Ingrese el ID a buscar:
+          <div class="row">
+              <div class="col-8">
+                <input type="text" class="form-control" placeholder="ej: 1234" required>
+              </div>
+              <div class="col-4">
+                <a type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                    BUSCAR </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
 </body>
 
 </html>
