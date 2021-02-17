@@ -1,0 +1,212 @@
+body, html {
+    
+    background-color: #00324b;
+}
+
+.franja{
+    padding: 6px;
+
+}
+header{
+    height: 100px;
+    background-color:#212529;
+}
+#letra{
+    color: white;
+    font-size: 13px;
+    margin : 1em 2em;
+    font-weight:600;
+}
+#letra:hover{
+    color:  #00b0e5;
+}
+#letra svg{
+    width: 20px;
+}
+.logo{
+    margin-left: 2em;
+}
+
+.tServicios{
+    margin: 20px;
+    color: white;
+    font-style: italic;
+}
+.card{
+    margin: 10px;
+}
+
+
+.sliders{
+    margin: 30px;
+ /*height: 190px;
+   margin-left: 400px;*/
+}
+
+.d-block {
+    width: 10px;
+    height: 390px;
+}
+
+
+.row{
+    margin: 10px;
+}
+
+/*
+seccion sliders
+
+ul.slider, li.sli {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    position:relative; /*Necesitamos que el ul sea relativo
+}
+ul.slider li.sli {
+    opacity: 0; /*Ocultamos todos los <li>
+    transition: opacity .5s;
+    position: absolute;/* Posicionamos en absoluto los <li>
+    left: 0px;
+    top: 0px;
+    margin:50px;
+    padding:50px;
+    border:2px solid black;
+    background:#fff;
+}
+ul.slider li.sli:first-child {
+    opacity: 1; /*Mostramos el primer <li>
+}
+ul.slider li.sli:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace
+}
+nav.slid {
+    position:relative;
+    top:200px;
+    left:50px;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+ul.slider, li.sli {
+    box-sizing: border-box;
+}
+
+ul.slider {
+    padding: 0px;
+}
+
+ul.slider li.sli {
+    width: 100vw;
+    height: 85vh;
+    margin: 0px;
+    
+    border: 0;
+    background-color: gray;
+    opacity: 0; 
+    transition: opacity .5s;
+    padding-top: 10vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: calc( 1.5rem + 1vw );
+    text-align: center;
+}
+
+img.slider{
+
+    position: absolute;
+    height: 460px;
+
+    padding-left: 5px;
+}
+
+#slide1 {
+    background-color: #00324b;
+    color: #fff;
+    
+}
+
+#slide2 {
+    background-color: #2B305C;
+    color: #fff;
+}
+
+#slide3 {
+    background-color: #00324b;
+    color: #fff;
+}
+
+#slide4 {
+    background-color: #0B135A;
+    color: #fff;
+}
+
+#slide5 {
+    background-color: #00324b;
+    color: #fff;
+}
+
+nav.slid {
+    width: 100vw;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f1f2f3;
+}
+
+nav.slid ul.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav.slid ul.menu li.sli {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border:box;
+}
+
+nav.slid a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00324b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    flex-grow: 1;
+    text-align: center;
+    border-top: 5px solid #00324b;
+    border-right: 1px solid #00324b;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav.slid li.sli:last-child a {
+    border-right: 0;
+}
+
+nav.slid a:hover {
+    background-color: #00324b;
+    color: #fff;
+    border-top-color: #65bce8;
+}
+
+nav.slid a:active {
+    border-top-color: #2D7D87;
+    background: #fff;
+    color: #00324b;
+}
+
+*/
+
+
