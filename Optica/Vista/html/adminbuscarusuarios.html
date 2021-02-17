@@ -11,40 +11,28 @@
     <link rel="stylesheet" href="../css/adminmenu.css">
     <link rel="stylesheet" href="../css/directorios.css">
     <link rel="stylesheet" href="../css/agregar.css">
-    <title>Agregar Usuarios</title>
+    <title> Usuario </title>
 </head>
 
 <body>
     <div id="menu"></div>
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row align-items-center">
             <form>
                 <class class="form-row">
-                    <div class="h1">EDITAR USUARIO # <span> 1234</span></div>
+                    <div class="h1"> USUARIO <span name="usuario"> #23433</span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer01">Nombre:</label>
+                            <label>Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" placeholder="First name"
-                                value="Mark" required>
-                            <div class="valid-feedback">
-                                Es correcto
-                            </div>
-                            <div class="invalid-feedback">
-                                Es Incorrecto
-                            </div>
+                            <input type="text" class="form-control" id="validationServer01" value="Jose antonio "
+                                value="Mark" readonly>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer01">Apellido:</label>
+                            <label>Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" placeholder="First name"
-                                value="Mark" required>
-                            <div class="valid-feedback">
-                                Correcto
-                            </div>
-                            <div class="invalid-feedback">
-                                Incorrecto
-                            </div>
+                            <input type="text" class="form-control" id="validationServer01" value="Jose antonio "
+                                value="Mark" readonly>
                         </div>
                     </div>
                     <div class="row">
@@ -55,7 +43,7 @@
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUsername"
-                                    placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                                    placeholder="Username" aria-describedby="inputGroupPrepend3" required readonly>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -66,7 +54,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Ciudad:</label>
-                            <input type="text" class="form-control" id="validationServer03" placeholder="City" required>
+                            <input type="text" class="form-control" id="validationServer03" placeholder="City" required readonly>
                             <div class="valid-feedback">
                                 Correcto
                             </div>
@@ -78,7 +66,8 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">País</label>
-                            <input type="text" class="form-control" id="validationServer04" placeholder="State" required>
+                            <input type="text" class="form-control" id="validationServer04" placeholder="State"
+                                required readonly>
                             <div class="valid-feedback">
                                 Correcto
                             </div>
@@ -87,17 +76,16 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer05">opcional</label>
-                            <input type="text" class="form-control " id="validationServer05" placeholder="Zip" required>
+                            <label for="validationServer05">contraseña</label>
+                            <input type="text" class="form-control " id="validationServer05" placeholder="*******" required readonly>
                             <div class="invalid-feedback">
                                 Please provide a valid zip.
                             </div>
                         </div>
                     </div>
-                    
+
         </div>
-        <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminusuarios.html">CANCELAR</a>
+        <a class="btn btn-primary" href="adminusuarios.html">ACEPTAR</a>
         </form>
     </div>
     </div>
