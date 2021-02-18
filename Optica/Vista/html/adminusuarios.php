@@ -50,7 +50,7 @@
                 <tbody>
                     <?php
             
-                    include("conexionprueba.php");
+                    include("../../Modelo/conexionprueba.php");
             
                     $query="SELECT * FROM usuario";
                     $resultado= $conexion->query($query);
