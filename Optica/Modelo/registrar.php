@@ -13,11 +13,7 @@ $query="INSERT INTO usuario(nombreUsuario, nombre, apellido, tipoUsuario, correo
 $resultado=$conexion->query($query);
 
 if ($resultado){
-<<<<<<< HEAD
-    header("Location: adminusuarios.php");
-=======
     header("Location: ./Vista/html/adminusuarios.php");
->>>>>>> e3489e56fab01022f40f873be74ebbc949d6578d
 }else{
     echo "No se ha podido guardar el registro";
 }
