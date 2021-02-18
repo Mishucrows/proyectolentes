@@ -63,24 +63,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServerUsername">Fecha de consulta:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-
-                                </div>
-                                <input type="text" class="form-control " id="validationServerUsername"
-                                    placeholder="dd/mm/aa" aria-describedby="inputGroupPrepend3" required>
-                                <div class="valid-feedback">
-                                    Correcto
-                                </div>
-                                <div class="invalid-feedback">
-                                    Porfavor ingrese un nombre de usuario
-                                </div>
-                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputDate">Fecha de consulta: </label>
+                                <input type="datetime-local" id="inputDate" class="form-control" name="fechanac">
+                              </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Motivo de consulta:</label>
-                            <input type="text" class="form-control" id="validationServer03" placeholder="Motivo"
+                            <input type="datetime" class="form-control" id="validationServer03" placeholder="Motivo"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
