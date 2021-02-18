@@ -50,7 +50,7 @@
                 <tbody>
                     <?php
             
-                    include("conexion.php");
+                    include("conexionprueba.php");
             
                     $query="SELECT * FROM usuario";
                     $resultado= $conexion->query($query);
@@ -65,8 +65,7 @@
                         <td><?php echo $row['correoElectronico']; ?></td>
                         <td><?php echo $row['tipoUsuario']; ?></td>
                         
-                        <td><a href="modificarf.php?id=<?php echo $row['id']; ?>">Modificar</a></td>
-                        <td><a href="eliminar.php?id=<?php echo $row['id']; ?>">Eliminar</a></td>
+                        
       
                       </tr> 
                     <?php
