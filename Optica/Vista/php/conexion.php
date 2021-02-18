@@ -6,3 +6,5 @@ $conexion = mysqli_connect('localhost','root','','Optica');
 if (!$conexion){
     echo "error"+mysqli_connect_error();
 }
+
+?>
