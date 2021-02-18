@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -161,7 +161,7 @@ header .container .col-md-7 p {
 
 .cover {
   width: 100%;
-  height: 55vmin;
+  height: 60vmin;
   background: url("../imágenes/pexels-lisa-banner_productos.jpg");
   background-position: -24rem -19rem;
   background-size: 150%;
@@ -181,18 +181,18 @@ header .container .col-md-7 p {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.445);
-  padding-top: 19vmin;
+  padding-top: 8vmin;
 }
 
 .cover .content > h1 {
   font-family: var(--Patua);
   font-size: 6vmin;
-  color: whitesmoke;
+  color: white;
 }
 
 .cover .content > p {
-  font-family: var(--Rubik);
-  font-size: 2vmin;
+  font-family: 'Pacifico', cursive;
+  font-size: 4vmin;
   color: #e5e5e5;
 }
 
@@ -210,7 +210,7 @@ header .container .col-md-7 p {
 
 
 .numbers {
-  margin-top: -15vmin;
+  margin-top: -35vmin;
   height: 25rem;
 }
 
