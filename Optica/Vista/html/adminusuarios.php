@@ -58,7 +58,7 @@
                     ?>
 
                     <tr>
-                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['idUsuario']; ?></td>
                         <td><?php echo $row['nombre']; ?></td>
                         <td><?php echo $row['apellido']; ?></td>
                         <td><?php echo $row['nombreUsuario']; ?></td>
