@@ -18,7 +18,7 @@
     <div class="container">
         <div class="h1">DIRECTORIO DE USUARIOS</div>
         <div class="row justify-content-end">
-            <a href="adminagregarusuarios.html" type="button" class="btn btn-primary col-2">
+            <a href="http://localhost/Optica/index.php?url=usuario/registrar" type="button" class="btn btn-primary col-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -49,12 +49,7 @@
                 </thead>
                 <tbody>
                     <?php
-            
-                    include("../../Modelo/conexionprueba.php");
-            
-                    $query="SELECT * FROM usuario";
-                    $resultado= $conexion->query($query);
-                    while($row=$resultado->fetch_assoc()){
+                    while($row=$valorescontrolador->fetch_assoc()){
                     ?>
 
                     <tr>
@@ -64,9 +59,6 @@
                         <td><?php echo $row['nombreUsuario']; ?></td>
                         <td><?php echo $row['correoElectronico']; ?></td>
                         <td><?php echo $row['tipoUsuario']; ?></td>
-                        
-                        
-      
                       </tr> 
                     <?php
                     }

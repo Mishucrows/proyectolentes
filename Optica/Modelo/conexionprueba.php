@@ -1,5 +1,8 @@
 <?php
-
-$conexion = new mysqli("localhost", "root", "", "bdoptica");
-
+class Cconexion{
+function conectar(){
+    $conexion = new mysqli("localhost", "root", "", "bdoptica");
+    return $conexion;
+}
+}
 ?>
