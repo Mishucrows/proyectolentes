@@ -13,7 +13,7 @@ $query="INSERT INTO usuario(nombreUsuario, nombre, apellido, tipoUsuario, correo
 $resultado=$conexion->query($query);
 
 if ($resultado){
-    header("Location: tabla.php");
+    header("Location: adminusuarios.php");
 }else{
     echo "No se ha podido guardar el registro";
 }

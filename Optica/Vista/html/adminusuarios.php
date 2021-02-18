@@ -52,7 +52,7 @@
             
                     include("conexion.php");
             
-                    $query="SELECT * FROM bdoptica";
+                    $query="SELECT * FROM usuario";
                     $resultado= $conexion->query($query);
                     while($row=$resultado->fetch_assoc()){
                     ?>
