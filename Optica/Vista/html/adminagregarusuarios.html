@@ -18,14 +18,14 @@
     <div id="menu"></div>
     <div class="container">
         <div class="row justify-content-center">
-            <form>
+            <form action="../../Modelo/registrar.php" method="POST">
                 <class class="form-row">
                     <div class="h1">AGREGAR USUARIOS</div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" placeholder="María Paula"
+                            <input type="text" class="form-control " name="validationServer01" id="validationServer01" placeholder="María Paula"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -37,7 +37,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer02" placeholder="Cando Chimbo"
+                            <input type="text" class="form-control " name="validationServer02" id="validationServer02" placeholder="Cando Chimbo"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -52,7 +52,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Email:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="email" class="form-control " id="validationServer03"
+                            <input type="email" class="form-control " name="validationServer03" id="validationServer03"
                                 placeholder="ejemplo@example.com" required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -63,7 +63,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Contraseña:</label>
-                            <input type="password" class="form-control" id="validationServer04" placeholder="abc123"
+                            <input type="password" class="form-control" name="validationServer04" id="validationServer04" placeholder="abc123"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -80,7 +80,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
-                                <input type="text" class="form-control " id="validationServerUsername"
+                                <input type="text" class="form-control " name="validationServerUsername" id="validationServerUsername"
                                     placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" required>
                                 <div class="valid-feedback">
                                     Correcto
@@ -92,9 +92,14 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer05">Tipo de Usuario</label>
-                            <select class="form-select form-select" aria-label=".form-select-lg example">
+                            <select class="form-select form-select" name="validationServer05" aria-label=".form-select-lg example">
+<<<<<<< HEAD
                                 <option selected value="1">Cliente</option>
                                 <option value="2">Administrador</option>
+=======
+                                <option selected value="Cliente">Cliente</option>
+                                <option value="Administrador">Administrador</option>
+>>>>>>> e3489e56fab01022f40f873be74ebbc949d6578d
                             </select>
                         </div>
                     </div>

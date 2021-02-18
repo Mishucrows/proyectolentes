@@ -50,23 +50,22 @@
                 <tbody>
                     <?php
             
-                    include("conexion.php");
+                    include("../../Modelo/conexionprueba.php");
             
-                    $query="SELECT * FROM bdoptica";
+                    $query="SELECT * FROM usuario";
                     $resultado= $conexion->query($query);
                     while($row=$resultado->fetch_assoc()){
                     ?>
 
                     <tr>
-                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['idUsuario']; ?></td>
                         <td><?php echo $row['nombre']; ?></td>
                         <td><?php echo $row['apellido']; ?></td>
                         <td><?php echo $row['nombreUsuario']; ?></td>
                         <td><?php echo $row['correoElectronico']; ?></td>
                         <td><?php echo $row['tipoUsuario']; ?></td>
                         
-                        <td><a href="modificarf.php?id=<?php echo $row['id']; ?>">Modificar</a></td>
-                        <td><a href="eliminar.php?id=<?php echo $row['id']; ?>">Eliminar</a></td>
+                        
       
                       </tr> 
                     <?php
