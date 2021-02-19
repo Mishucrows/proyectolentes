@@ -5,10 +5,11 @@ include("./Modelo/productos.modelo.php");
 class Productos extends Controlador
 {
     function __constructor(){
-        parent::
+        parent::__constructor();
     }
     function index(){
         //cargar vista
+        echo ">:3";
     }
 
 }
