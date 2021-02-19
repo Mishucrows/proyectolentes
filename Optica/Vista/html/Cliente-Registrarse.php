@@ -9,7 +9,7 @@
     crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/Cliente-Registrarse.css">
+    <link rel="stylesheet" href="/Cliente-Registrarse.css">
 
 </head>
 <body>
@@ -106,13 +106,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img  class="d-block w-100" src="../imágenes/pexels-photo-grapher-1548027.jpg" alt="First slide">
+          <img  class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100"  src="../imágenes/pexels-photo-grapher-1548027.jpg"  alt="Second slide">
+          <img class="d-block w-100"  src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg"  alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100"  src="../imágenes/pexels-photo-grapher-1548027.jpg"  alt="Third slide">
+          <img class="d-block w-100"  src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg"  alt="Third slide"> 
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
