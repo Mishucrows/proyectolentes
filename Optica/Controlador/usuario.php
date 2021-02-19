@@ -36,7 +36,7 @@ class Usuario extends Controlador{
         parent::cargarvista("html/adminusuarios",$consulta);
     }
 
-    function eliminarcontrolador(){
+    function eliminarControlador(){
         $id = $_REQUEST['idUsuario'];
         $registro = new CusuarioModel();
         $consulta = $registro->eliminar($id);
