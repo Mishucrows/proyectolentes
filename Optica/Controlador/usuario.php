@@ -41,7 +41,7 @@ class Usuario extends Controlador{
         $registro = new CusuarioModel();
         $consulta = $registro->eliminar($id);
         if ($consulta == "ok"){
-            header("Location: http://localhost/Optica/index.php?url=usuario/mostrarcontrolador");
+            header("Location: ".URL."usuario/mostrarcontrolador");
         }else{
             echo "No se ha podido eliminar el registro";
         }
