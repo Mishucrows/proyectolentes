@@ -7,9 +7,13 @@ class Usuario extends Controlador{
     {
         parent::__construct();
     }
+
+    function index(){
+        $this->mostrarcontrolador();
+    }
+
     function registrar(){
         parent::cargarvista("html/adminagregarusuarios");
-
     }
     // recibe los datos dela vista de usuario
     function registrarcontrolador(){
