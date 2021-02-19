@@ -95,7 +95,7 @@
             <label for="apellido-cliente"> Apellido </label>
             <p><input type="text" name="apellido-cliente" id="apellido-cliente"> </input></p>       
             <label for="correo-cliente"> Correo </label>
-            <p><input type="email" nombre="correo-cliente" id="correo-cliente"></input></p> 
+            <p><input type="email" name="correo-cliente" id="correo-cliente"></input></p> 
             <label for="contraseña-cliente">Contraseña</label>
             <p><input type="password"  name="contrasena-cliente" id="contraseña-cliente"> </input></p>              
             <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
