@@ -25,8 +25,8 @@
                     }
                 }
             }else{
-                include("controlador/inicio.php");
-                $vista = new Inicio();
+                include("controlador/ingreso.php");
+                $vista = new Ingreso();
                 $vista->index();
             }
 

@@ -14,7 +14,6 @@ class Ingreso extends Controlador
 	function index ()
 	{
 		#//cargar vista
-		echo "holaa";
 		parent::cargarvista("html/Cliente-Registrarse");
 	}
 
