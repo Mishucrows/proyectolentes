@@ -9,17 +9,17 @@ class Productos extends Controlador
     }
     function index(){
         //cargar vista
-        parent::cargarvista("prueba/index");
+        parent::cargarvista("html/adminagregarproductos");
     }
     function ingresarProdu(){
         //verificar nombre de variable aun no existe (como ella :'v)
         //$datos=array(
-            $nombre = $_POST["nombreProducto"];
-            $marca = $_POST["marcaProducto"];
-            $tipo = $_POST["tipoProducto"];
-            $precio = $_POST["precioProducto"];
-            $material = $_POST["materialProducto"];
-            $sexo = $_POST["sexoProducto"];
+            $nombre = $_POST["validationServer01"];
+            $marca = $_POST["validationServer02"];
+            $tipo = $_POST["validationServer03"];
+            $precio = $_POST["validationServer04"];
+            $material = $_POST["validationServer05"];
+            $sexo = $_POST["validationServer06"];
        // );
 
         //se realiza la consulta
