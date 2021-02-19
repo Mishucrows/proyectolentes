@@ -89,15 +89,15 @@
         <div class="modal-body">
           <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST">
             <label for="nombre-usuario"> Nombre de Usuario</label>
-            <p><input type="text" id="nombre-usuario"> </input> </p>
+            <p><input type="text" name="nombre-usuario" id="nombre-usuario"> </input> </p>
             <label for="nombre-cliente"> Nombre </label>
-            <p><input type="text" id="nombre-cliente"> </input> </p>           
+            <p><input type="text"  name="nombre-clienet" id="nombre-cliente"> </input> </p>           
             <label for="apellido-cliente"> Apellido </label>
-            <p><input type="text" id="apellido-cliente"> </input></p>       
+            <p><input type="text" name="apellido-cliente" id="apellido-cliente"> </input></p>       
             <label for="correo-cliente"> Correo </label>
-            <p><input type="email" id="correo-cliente"></input></p> 
+            <p><input type="email" nombre="correo-cliente" id="correo-cliente"></input></p> 
             <label for="contraseña-cliente">Contraseña</label>
-            <p><input type="password" id="contraseña-cliente"> </input></p>              
+            <p><input type="password"  name="contrasena-cliente" id="contraseña-cliente"> </input></p>              
             <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
           </form>
