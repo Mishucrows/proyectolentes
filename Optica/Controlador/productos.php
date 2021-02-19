@@ -25,6 +25,7 @@ class Productos extends Controlador
             $precio = $_POST["validationServer04"];
             $material = $_POST["validationServer05"];
             $sexo = $_POST["validationServer06"];
+            header("location: ".URL."productos");
        // );
 
         //se realiza la consulta
@@ -40,6 +41,8 @@ class Productos extends Controlador
     function agregar(){
         parent::cargarvista("html/adminagregarproductos");
     }
-
+    function editar(){
+        parent::cargarvista("html/admineditarproductos");
+    }
 
 }

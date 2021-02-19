@@ -8,14 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/adminmenu.css">
-    <link rel="stylesheet" href="../css/directorios.css">
-    <link rel="stylesheet" href="../css/agregar.css">
+    <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
+    <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
+    <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
     <title>Agregar Usuarios</title>
 </head>
 
 <body>
-    <div id="menu"></div>
+<?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
             <form action="<?php echo URL?>productos/ingresarProdu" method="POST">
@@ -99,7 +99,7 @@
                     </div>
         </div>
         <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminusuarios.html">CANCELAR</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>productos">CANCELAR</a>
         </form>
     </div>
     </div>

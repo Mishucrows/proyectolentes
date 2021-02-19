@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="menu"></div>
+<?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
             <form action="<?php echo URL; ?>usuario/registrarcontrolador" method="POST">

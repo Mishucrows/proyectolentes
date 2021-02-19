@@ -63,7 +63,7 @@
                         <td><?php echo $row['material']; ?></td>
                         <td><?php echo $row['sexo']; ?></td>
                         <td>
-                            <a href="<?php echo URL; ?>vista/html/admineditarusuarios.php" class="btn btn-light">
+                            <a href="<?php echo URL; ?>productos/editar" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
