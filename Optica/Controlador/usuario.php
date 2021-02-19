@@ -42,7 +42,7 @@ class Usuario extends Controlador{
 
     function eliminarControlador(){
         $registro = new CusuarioModel();
-        $id = $_REQUEST['idUsuario'];
+        $id = $_GET['idUsuario'];
         $consulta = $registro->eliminar($id);
         if ($consulta == "ok"){
             header("Location: ".URL."usuario/mostrarcontrolador");
