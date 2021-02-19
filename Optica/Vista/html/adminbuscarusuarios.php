@@ -20,7 +20,7 @@
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                    <div class="h1"> USUARIO # <span>1234</span></div>
+                    <div class="h1"> USUARIO # <span>12345</span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
@@ -69,8 +69,8 @@
                         </div>
                     </div>
         </div>
-        <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminusuarios.html">CANCELAR</a>
+        <a href="<?php echo URL ?>/usuario/mostrarcontrolador" class="btn btn-primary" type="submit">GUARDAR DATOS</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>/usuario/mostrarcontrolador">CANCELAR</a>
         </form>
     </div>
     </div>
