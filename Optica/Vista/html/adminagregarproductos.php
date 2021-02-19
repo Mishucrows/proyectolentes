@@ -53,12 +53,12 @@
                             <label for="validationServer02">Tipo:</label>
                             <!-- is-valid es una clase para validar campos -->
                                 <select class="form-select form-select" name="validationServer03" aria-label=".form-select-lg example">
-                                    <option selected value="Cliente">Lentes de contacto</option>
-                                    <option value="Administrador">paños</option>
-                                    <option value="Administrador">cordones</option>
-                                    <option value="Administrador">cajas de los lentes</option>
-                                    <option value="Administrador">gafas</option>
-                                    <option value="Administrador">lentes</option>
+                                    <option selected value="Lentes de contacto">Lentes de contacto</option>
+                                    <option value="paños">paños</option>
+                                    <option value="cordones">cordones</option>
+                                    <option value="coaja de los lentes">cajas de los lentes</option>
+                                    <option value="gafas">gafas</option>
+                                    <option value="lentes">lentes</option>
                                 </select>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -91,8 +91,8 @@
                             <label for="validationServer02">Sexo:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <select class="form-select form-select" name="validationServer06" aria-label=".form-select-lg example">
-                                <option selected value="Cliente">Masculino</option>
-                                <option value="Administrador">Femenino</option>
+                                <option selected value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
                             </select>
                         </div>
 
