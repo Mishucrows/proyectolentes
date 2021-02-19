@@ -13,4 +13,11 @@ class ProductoModelo{
             return "error";
         }
     }
+    function mostrar(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM producto";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
 }

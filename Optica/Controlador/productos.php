@@ -32,4 +32,11 @@ class Productos extends Controlador
             echo $result;
         }
     }
+    
+    function mostrarcontrolador(){
+        $consulta = new ProductoModelo();
+        $result  = $consulta->mostrar();
+        parent::cargarvista("html/adminproductos.php",$consulta);
+    }
+
 }
