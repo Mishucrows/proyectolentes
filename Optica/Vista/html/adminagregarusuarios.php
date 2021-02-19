@@ -18,7 +18,7 @@
     <div id="menu"></div>
     <div class="container">
         <div class="row justify-content-center">
-            <form action="http://localhost/Optica/index.php?url=usuario/registrarcontrolador" method="POST">
+            <form action="<?php echo URL; ?>usuario/registrarcontrolador" method="POST">
                 <class class="form-row">
                     <div class="h1">AGREGAR USUARIOS</div>
                     <div class="row">

@@ -23,7 +23,7 @@ class Usuario extends Controlador{
         $registro = new CusuarioModel();
         $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
         if ($consulta == "ok"){
-            header("Location: http://localhost/Optica/index.php?url=usuario/mostrarcontrolador");
+            header("Location: ".URL."usuario/mostrarcontrolador");
         }
         else{
             echo "no se ha podido guardar";
