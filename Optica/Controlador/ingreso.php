@@ -30,7 +30,7 @@ class Ingreso extends Controlador
 			{
 				$tipousuario = $datosbdd["tipoUsuario"];
 				if($tipousuario == "Administrador"){
-					parent::cargarvista("html/adminproductos");
+					header("location: ".URL."productos");
 				} else{
 					parent::cargarvista("html/cliente");
 				}
