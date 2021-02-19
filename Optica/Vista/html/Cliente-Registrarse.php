@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo URL; ?>vista/css/Cliente-Registrarse.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -46,7 +49,40 @@
         </div>
       </nav>
     </div>
-    
+
+    <section class="section-1 container-fluid p-0">
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-andrew-wilus-5515756.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">              
+                <h2 style="padding-bottom: 50px; font-size: 50px; font-family: 'Bungee Inline', cursive;"><span class="word" id="word"></span></h2>
+                <h1  style="padding-bottom: 190px; font-size: 70px; font-family: 'Monoton', cursive;">"BIENVENIDO"</h1>               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-helena-lopes-933964.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-aline-viana-prado-3491678.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </section>
   </header>
 
   <div class="modal fade" id="registrarse-cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -102,29 +138,166 @@
     </div>
   </div>
 
-  <div class="container fixed_2">
-    <div id="carouselExampleControls" class="carousel slide fixed_2" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img  class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg" alt="First slide">
+  <main>
+
+    <section class="section-2 container-fluid ">       
+      <div class="purchase text-center">
+        <h1>"Prueba Nuestros Servicios"</h1>      
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card mr-2 shadow-lg">
+              <div class="inner">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Consulta_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">CONSULTAS</h5>
+                </div>
+                <p class="card-text">
+                  Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                </p>              
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <div class="inner">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">TRATAMIENTOS</h5>
+                </div>
+                <p class="card-text">
+                  La miopía, el astigmatismo y la hipermetropía son enfermedades de la vista conocidas como defectos de refracción.                
+                </p>                
+              </div>
+            </div>
+                  
+            <div class="card">
+              <div class="inner">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/L Contacto_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">LENTES DE CONTACTO</h5>
+                </div>
+                <p class="card-text">
+                  Proporcionan un campo visual total sin la interferencia de las monturas, garantizan una mejor visión de las zonas periféricas y una mayor nitidez en profundidad.                
+                </p> 
+                         
+              </div>
+            </div>
+
+          </div>
+        </div> 
+
+        <div class="purchase text-center">
+          <h1>"Revisa Nuestros Productos"</h1>      
+          <div class="cards">
+            <div class="d-flex flex-row justify-content-center flex-wrap">
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/arm.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">ARMAZONES</h5>
+                  </div>
+                  <p class="card-text">
+                    Contamos con ventas al por mayor y menor, unisex, multimodelos y colores.<br> 100% originales              
+                  </p>              
+                </div>
+              </div>
+              
+  
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/luna.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">LUNAS</h5>
+                  </div>
+                  <p class="card-text">
+                    Antireflex <br>
+                    Antireflex Sky <br>
+                    Blue Defense <br>
+                    Fotocromático               
+                  </p>                
+                </div>
+              </div>
+                    
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/li.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">KITS DE LIMPIEZA</h5>
+                  </div>
+                  <p class="card-text">
+                    Loción antiempañante y toallitas prehumedecidas. <br>
+                    Método rápido y sencillo para mantener higiene y cuidado de tus lentes.             
+                  </p>                            
+                </div>
+              </div>
+  
+            </div>
+          </div> 
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">Sobre nosotros</h4>
+          <p class="text-muted">Hace 10 años nace Óptica Victoria, el cual está conformado por: Óptica Victoria, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
+            La empresa cuenta con su local en la ciudad de Machala</p>
+          <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
+            <span> Óptica Victoria</span>
+          </p>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100"  src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg"  alt="Second slide">
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Contactos</h4>
+          <br>
+          <p class="text-light">
+            <i class="fas fa-map-marker-alt mx-3"></i>Machala
+          </p>
+          <p  class="text-light">
+            <i class="fas fa-at mx-3"></i>ópticaVictoria@hotmail.com
+          </p>
+          <p  class="text-light">
+            <i class="fab fa-whatsapp mx-3"></i>09980072777
+          </p>        
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="E-mail">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100"  src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg"  alt="Third slide"> 
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Síguenos</h4>
+          <p class="text-muted">Nos puedes encontrar en nuestras redes sociales</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </div>
+  </footer>
 
 </body>
 
@@ -133,5 +306,5 @@
   crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"></script>
-  <script src="/Vista/js/cliente.js"></script>
+  <script src="<?php echo URL; ?>vista/js/cliente.js"></script>
 </html>
