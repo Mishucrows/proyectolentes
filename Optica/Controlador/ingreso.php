@@ -30,9 +30,9 @@ class Ingreso extends Controlador
 			{
 				$tipousuario = $datosbdd["tipoUsuario"];
 				if($tipousuario == "Administrador"){
-					echo "OK soy un administrador";
+					parent::cargarvista("html/adminproductos");
 				} else{
-					echo "OK soy un cliente";
+					parent::cargarvista("html/cliente");
 				}
 			} else {
 				echo "La contraseña o usuario no coinciden";
