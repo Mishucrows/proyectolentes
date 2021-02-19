@@ -7,9 +7,13 @@ class Usuario extends Controlador{
     {
         parent::__construct();
     }
+
+    function index(){
+        $this->mostrarcontrolador();
+    }
+
     function registrar(){
         parent::cargarvista("html/adminagregarusuarios");
-
     }
     // recibe los datos dela vista de usuario
     function registrarcontrolador(){
@@ -23,10 +27,28 @@ class Usuario extends Controlador{
         $registro = new CusuarioModel();
         $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
         if ($consulta == "ok"){
-            header("Location: http://localhost/Optica/index.php?url=usuario/mostrarcontrolador");
+            header("Location: ".URL."usuario/mostrarcontrolador");
         }
         else{
-            echo "no se ha podido guardar";
+            echo "No se ha podido guardar";
+        }
+    }
+
+    function registrarcontroladorCliente(){
+        $nombre=$_POST['nombre-cliente'];
+        $apellido=$_POST['apellido-cliente'];
+        $email=$_POST['correo-cliente'];
+        $contrasena=$_POST['contrasena-cliente'];
+        $nombreUsuario=$_POST['nombre-usuario'];
+        $tipoUsuario="Cliente";
+        // instancia del modelo
+        $registro = new CusuarioModel();
+        $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }
+        else{
+            echo "No se ha podido guardar";
         }
     }
 
@@ -35,5 +57,19 @@ class Usuario extends Controlador{
         $consulta = $registro->mostrar();
         parent::cargarvista("html/adminusuarios",$consulta);
     }
+
+    function eliminarControlador(){
+        $id = $_REQUEST['idUsuario'];
+        $registro = new CusuarioModel();
+
+        $consulta = $registro->eliminar($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }else{
+            echo "No se ha podido eliminar el registro";
+        }
+
+    }
+
 }
 ?>

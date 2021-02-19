@@ -11,8 +11,10 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/cliente.css" />
-  <link rel="stylesheet" href="./mobile-style.css">
+
+  <link rel="stylesheet" href="<?php echo URL; ?>vista/css/cliente.css" />
+  <link rel="stylesheet" href="<?php echo URL; ?>vista/css/mobile-style.css">
+
 </head>
 
 <body>
@@ -84,7 +86,7 @@
           </button>
         </div>
         <div class="col-md-5 col-sm-12">
-          <img src="../imágenes/undraw_doctors_white_cliente.svg" alt="doctor" class="img-fluid" />
+          <img src="<?php echo URL; ?>vista/imágenes/undraw_doctors_white_cliente.svg" alt="doctor" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -109,7 +111,7 @@
             <h1>20</h1>
             <p>LENTES</p>
             <div class="container">
-              <img src="../imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
+              <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
             </div>   
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>           
           </div>
@@ -118,7 +120,7 @@
             <h1>100</h1>
             <p>LUNAS</p>
             <div class="container">
-              <img src="../imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
+              <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
             </div>
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>    
           </div>
@@ -126,7 +128,7 @@
             <h1>56</h1>
             <p>ARMAZONES</p>
             <div class="container">
-              <img src="../imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
+              <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
             </div> 
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>      
           </div>
@@ -135,7 +137,7 @@
             <h1>91</h1>
             <p>KIT DE LIMPIEZA</p>
             <div class="container">
-              <img src="../imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
+              <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
             </div> 
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>    
           </div>
@@ -152,7 +154,7 @@
           <div class="d-flex flex-row justify-content-center flex-wrap">
             <div class="card">
               <div class="inner">
-                <img class="card-img-top" src="../imágenes/Consulta_Servicio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Consulta_Servicio.jpg" alt="Card image cap">
               </div>
               <div class="card-body">
                 <div class="title">
@@ -172,7 +174,7 @@
 
             <div class="card">
               <div class="inner">
-                <img class="card-img-top" src="../imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
               </div>
               <div class="card-body">
                 <div class="title">
@@ -191,7 +193,7 @@
                   
             <div class="card">
               <div class="inner">
-                <img class="card-img-top" src="../imágenes/L Contacto_Servicio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/L Contacto_Servicio.jpg" alt="Card image cap">
               </div>
               <div class="card-body">
                 <div class="title">
@@ -357,7 +359,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="../js/cliente.js"></script>
+
+  <script src="<?php echo URL; ?>vistas/js/cliente.js"></script>
 </body>
 
 </html>
