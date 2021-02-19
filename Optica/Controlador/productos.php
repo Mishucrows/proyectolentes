@@ -9,7 +9,27 @@ class Productos extends Controlador
     }
     function index(){
         //cargar vista
-        echo ">:3";
+        parent::cargarvista("prueba/index");
     }
+    function ingresarProdu(){
+        //verificar nombre de variable aun no existe (como ella :'v)
+        //$datos=array(
+            $nombre = $_POST["nombreProducto"];
+            $marca = $_POST["marcaProducto"];
+            $tipo = $_POST["tipoProducto"];
+            $precio = $_POST["precioProducto"];
+            $material = $_POST["materialProducto"];
+            $sexo = $_POST["sexoProducto"];
+       // );
 
+        //se realiza la consulta
+        $consulta = new ProductoModelo();
+        $result = $consulta->registrarProdu($nombre, $marca, $tipo, $precio, $material, $sexo);
+        if ($consulta == "okey"){
+            echo "Si se guardo";
+        }
+        else{
+            echo $result;
+        }
+    }
 }
