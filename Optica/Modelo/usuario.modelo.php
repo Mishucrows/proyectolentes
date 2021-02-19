@@ -10,7 +10,6 @@ class CusuarioModel{
         $resultado= $conexion->conectar()->query($query);
         if ($resultado){
             return "ok";
-           // header("Location: ./Vista/html/adminusuarios.php");
         }else{
             echo "No se ha podido guardar el registro";
         }
@@ -21,6 +20,17 @@ class CusuarioModel{
         $query="SELECT * FROM usuario";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
+    }
+
+    function eliminar($id){
+        $conexion = new Cconexion();
+        $query= "DELETE FROM usuario WHERE idUsuario=$id";
+        $resultado = $conexion->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe el registro que desea eliminar";
+        }
     }
 }
 ?>
