@@ -7,8 +7,8 @@ include ("./Modelo/login.model.php");
  */
 class Ingreso extends Controlador
 {
-	function __constructor(){
-		parent:: __constructor();
+	function __construct(){
+		parent::__construct();
 	}
 	
 	function index ()
@@ -23,15 +23,14 @@ class Ingreso extends Controlador
 		
 
 		if (isset ($_POST["nombre_usuario"]) && isset($_POST["contraseña_cliente"])) {
-			echo "Inicio de sesión correcto";
 			$consulta= new IngresoModelo();
 			$result= $consulta->obtenerdatosu($_POST["nombre_usuario"]);
-			$datosbdd="";
-			var_dump($result);
+
+			$datosbdd = $result;
 			if($datosbdd["nombreUsuario"]==$_POST["nombre_usuario"]&&($datosbdd["contrasena"]==$_POST["contraseña_cliente"]))
 			{
-				$tipousuario=$datosbdd["tipoUsuario"];
-				if($tipousuario="Administrador"){
+				$tipousuario = $datosbdd["tipoUsuario"];
+				if($tipousuario == "Administrador"){
 					echo "OK soy un administrador";
 				} else{
 					echo "OK soy un cliente";
