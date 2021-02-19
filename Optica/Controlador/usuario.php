@@ -27,14 +27,14 @@ class Usuario extends Controlador{
         $registro = new CusuarioModel();
         $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
         if ($consulta == "ok"){
-            header("Location: ".URL"usuario/mostrarcontrolador");
+            header("Location: ".URL."usuario/mostrarcontrolador");
         }
         else{
             echo "No se ha podido guardar";
         }
     }
 
-    function registrarCliente(){
+    function registrarcliente(){
         parent::cargarvista("html/agregarcliente");
     }
 
