@@ -9,10 +9,11 @@
                 $url = explode("/",$url);
 
                 $clase = $url[0];
-                
 
                 if(isset($url[1])){
                     $metodo = $url[1];
+                }else{
+                    $metodo = "index";
                 }
 
                 if (!empty($clase)){
@@ -26,6 +27,7 @@
             }else{
                 include("controlador/inicio.php");
                 $vista = new Inicio();
+                $vista->index();
             }
 
         }

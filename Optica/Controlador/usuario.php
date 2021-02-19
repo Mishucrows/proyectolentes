@@ -7,9 +7,13 @@ class Usuario extends Controlador{
     {
         parent::__construct();
     }
+
+    function index(){
+        $this->mostrarcontrolador();
+    }
+
     function registrar(){
         parent::cargarvista("html/adminagregarusuarios");
-
     }
     // recibe los datos dela vista de usuario
     function registrarcontrolador(){
@@ -37,11 +41,11 @@ class Usuario extends Controlador{
     }
 
     function eliminarControlador(){
-        $id = $_REQUEST['idUsuario'];
         $registro = new CusuarioModel();
+        $id = $_REQUEST['idUsuario'];
         $consulta = $registro->eliminar($id);
         if ($consulta == "ok"){
-            header("Location: http://localhost/Optica/index.php?url=usuario/mostrarcontrolador");
+            header("Location: ".URL."usuario/mostrarcontrolador");
         }else{
             echo "No se ha podido eliminar el registro";
         }
