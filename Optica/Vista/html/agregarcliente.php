@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Cliente-Registrarse.css">
-
 </head>
+
 <body>
   <header>
     <div class="container-fluid p-0">
@@ -45,8 +45,36 @@
           </ul>
         </div>
       </nav>
+      <section class="section-1 container-fluid p-0">
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../imágenes/pexels-andrew-wilus-5515756.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../imágenes/pexels-helena-lopes-933964.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../imágenes/pexels-aline-viana-prado-3491678.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </section>
     </div>
-    
   </header>
 
   <div class="modal fade" id="registrarse-cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -59,17 +87,17 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST" name="form-registro">
+          <form action="" name="form-registro">
             <label for="nombre-usuario"> Nombre de Usuario</label>
-            <p><input type="text" name="nombre-usuario" id="nombre-usuario"> </input> </p>
+            <p><input type="text" id="nombre-usuario"> </input> </p>
             <label for="nombre-cliente"> Nombre </label>
-            <p><input type="text" name="nombre-cliente" id="nombre-cliente"> </input> </p>           
+            <p><input type="text" id="nombre-cliente"> </input> </p>           
             <label for="apellido-cliente"> Apellido </label>
-            <p><input type="text" name="apellido-cliente"  id="apellido-cliente"> </input></p>       
+            <p><input type="text" id="apellido-cliente"> </input></p>       
             <label for="correo-cliente"> Correo </label>
-            <p><input type="email"  name="correo-cliente" id="correo-cliente"></input></p> 
-            <label for="contrasena-cliente">Contraseña</label>
-            <p><input type="password"  name="contrasena-cliente" id="contrasena-cliente"> </input></p>              
+            <p><input type="email" id="correo-cliente"></input></p> 
+            <label for="contraseña-cliente">Contraseña</label>
+            <p><input type="password" id="contraseña-cliente"> </input></p>              
             <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
           </form>
@@ -103,44 +131,170 @@
   </div>
 
   <main>
-    
-  <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="../imágenes/pexels-photo-grapher-1548027.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> 
-  </div>
 
+    <section class="section-2 container-fluid ">       
+      <div class="purchase text-center">
+        <h1>"Prueba Nuestros Servicios"</h1>      
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card mr-2 shadow-lg">
+              <div class="inner">
+                <img class="card-img-top" src="../imágenes/Consulta_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">CONSULTAS</h5>
+                </div>
+                <p class="card-text">
+                  Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                </p>              
+              </div>
+            </div>
+            
+
+            <div class="card">
+              <div class="inner">
+                <img class="card-img-top" src="../imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">TRATAMIENTOS</h5>
+                </div>
+                <p class="card-text">
+                  Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                </p>                
+              </div>
+            </div>
+                  
+            <div class="card">
+              <div class="inner">
+                <img class="card-img-top" src="../imágenes/L Contacto_Servicio.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">LENTES DE CONTACTO</h5>
+                </div>
+                <p class="card-text">
+                  Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                </p> 
+                         
+              </div>
+            </div>
+
+          </div>
+        </div> 
+
+        <div class="purchase text-center">
+          <h1>"Revisa Nuestros Productos"</h1>      
+          <div class="cards">
+            <div class="d-flex flex-row justify-content-center flex-wrap">
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="../imágenes/Consulta_Servicio.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">LENTES</h5>
+                  </div>
+                  <p class="card-text">
+                    Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                  </p>              
+                </div>
+              </div>
+              
+  
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="../imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">LUNAS - ARMAZONES</h5>
+                  </div>
+                  <p class="card-text">
+                    Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                  </p>                
+                </div>
+              </div>
+                    
+              <div class="card">
+                <div class="inner">
+                  <img class="card-img-top" src="../imágenes/L Contacto_Servicio.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h5 class="card-title">KITS DE LIMPIEZA</h5>
+                  </div>
+                  <p class="card-text">
+                    Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
+                  </p>                            
+                </div>
+              </div>
+  
+            </div>
+          </div> 
+    </section>
   </main>
 
+  
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">Sobre nosotros</h4>
+          <p class="text-muted">Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
+            La empresa cuenta con su local en El Oro</p>
+          <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
+            <span> Óptica Victoria</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Contactos</h4>
+          <br>
+          <p class="text-light">
+            <i class="fas fa-map-marker-alt mx-3"></i>Riobamba
+          </p>
+          <p  class="text-light">
+            <i class="fas fa-at mx-3"></i>optica@hotmail.com
+          </p>
+          <p  class="text-light">
+            <i class="fab fa-whatsapp mx-3"></i>09980072777
+          </p>        
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Siguenos</h4>
+          <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="../js/cliente.js"></script>
+  
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
-  <script src="/Vista/js/cliente.js"></script>
+
 </html>

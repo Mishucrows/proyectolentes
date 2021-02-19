@@ -18,7 +18,7 @@
     <div id="menu"></div>
     <div class="container">
         <div class="row justify-content-center">
-            <form action="../../Modelo/registrar.php" method="POST">
+            <form action="<?php echo URL?>productos/ingresarProdu" method="POST">
                 <class class="form-row">
                     <div class="h1">AGREGAR PRODUCTOS</div>
                     <div class="row">
