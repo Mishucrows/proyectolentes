@@ -34,6 +34,10 @@ class Usuario extends Controlador{
         }
     }
 
+    function registrarCliente(){
+        parent::cargarvista("html/agregarcliente");
+    }
+
     function registrarcontroladorCliente(){
         $nombre=$_POST['nombre-cliente'];
         $apellido=$_POST['apellido-cliente'];
