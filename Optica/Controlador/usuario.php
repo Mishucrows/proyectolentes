@@ -47,5 +47,6 @@ class Usuario extends Controlador{
         }
 
     }
+
 }
 ?>
