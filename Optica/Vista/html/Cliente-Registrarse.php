@@ -37,8 +37,8 @@
               <div class="dropdown">
                 <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i></a>
                 <div class="dropdown-content fixed">
-                  <a href="" data-toggle="modal" data-target="#registrarse-cliente" >Crear Cuenta</a>
                   <a href="" data-toggle="modal" data-target="#inicio-cliente">Iniciar Sesión </a>              
+                  <a href="" data-toggle="modal" data-target="#registrarse-cliente" >Crear Cuenta</a>
                 </div>
               </div>
             </li>
