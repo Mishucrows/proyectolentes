@@ -115,7 +115,7 @@
                             <input type="text" class="form-control" placeholder="ej: 1234" required>
                         </div>
                         <div class="col-4">
-                            <a href="adminbuscarusuarios.html" type="button" class="btn btn-dark">
+                            <a href="<?php echo URL; ?>vista/html/adminbuscarusuarios.php" type="button" class="btn btn-dark">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-search" viewBox="0 0 16 16">
                                     <path
