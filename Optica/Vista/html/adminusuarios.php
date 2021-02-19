@@ -61,7 +61,7 @@
                         <td><?php echo $row['correoElectronico']; ?></td>
                         <td><?php echo $row['tipoUsuario']; ?></td>
                         <td>
-                            <a href="adminModificarCita.html" class="btn btn-light">
+                            <a href="<?php echo URL; ?>vista/html/admineditarusuarios.php" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -70,7 +70,7 @@
                                         d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                 </svg>
                             </a>
-                            <a href="http://localhost/proyectolentes/Optica/usuario/eliminarControlador" class="btn btn-danger">
+                            <a class="btn btn-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-trash" viewBox="0 0 16 16">
                                     <path
