@@ -24,13 +24,9 @@ class CusuarioModel{
 
     function eliminar($id){
         $conexion = new Cconexion();
-        $query= "DELETE FROM usuario WHERE idUsuario=$id";
-        $resultado = $conexion->conectar()->query($query);
-        if ($resultado){
-            return "ok";
-        }else{
-            echo "No existe el registro que desea eliminar";
-        }
+        $eliminar=$conexion->prepare('DELETE FROM usuario WHERE idUsuario=id');
+        $eliminar->bindValue('idUsuario',$id);
+        $eliminar->execute();
     }
 }
 ?>
