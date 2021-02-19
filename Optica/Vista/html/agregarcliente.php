@@ -91,7 +91,7 @@
             <label for="nombre-usuario"> Nombre de Usuario</label>
             <p><input type="text" name="nombre-usuario" id="nombre-usuario"> </input> </p>
             <label for="nombre-cliente"> Nombre </label>
-            <p><input type="text"  name="nombre-clienet" id="nombre-cliente"> </input> </p>           
+            <p><input type="text"  name="nombre-cliente" id="nombre-cliente"> </input> </p>           
             <label for="apellido-cliente"> Apellido </label>
             <p><input type="text" name="apellido-cliente" id="apellido-cliente"> </input></p>       
             <label for="correo-cliente"> Correo </label>
