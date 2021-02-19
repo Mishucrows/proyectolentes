@@ -2,12 +2,14 @@
 include ("conexionprueba.php");
 class IngresoModelo {
 	function obtenerdatosu($nombreUsuario){
-		$conexionpruebaA=new Cconexion();
-		$query ="select* from usuarios where nombreUsuario=$nombreUsuario";
-		$resul= $conexionpruebaA ->conectar()->query($query);
+		$conexionpruebaA = new Cconexion();
+		$query ="SELECT * FROM usuario WHERE nombreUsuario = '$nombreUsuario'";
+		$resul= $conexionpruebaA->conectar()->query($query);
+		// $resul= Cconexion::conectarv2()->query($query);
+		
 		if ($resul)
 		{
-			return $resul;
+			return $resul->fetch_assoc();
 		} else {
 			return "error";
 		}
