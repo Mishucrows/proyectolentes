@@ -22,11 +22,15 @@ class CusuarioModel{
         return $resultado;
     }
 
-    function eliminar($id){
+    function eliminar($tabla, $condicion){
         $conexion = new Cconexion();
-        $eliminar=$conexion->prepare('DELETE FROM usuario WHERE idUsuario=id');
-        $eliminar->bindValue('idUsuario',$id);
-        $eliminar->execute();
+        $query= "DELETE FROM".$tabla."WHERE ".$condicion;
+        $resultado = $this->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe el registro que desea eliminar";
+        }
     }
 }
 ?>
