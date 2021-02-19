@@ -36,7 +36,7 @@
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i></a>
-                <div class="dropdown-content">
+                <div class="dropdown-content fixed">
                   <a href="" data-toggle="modal" data-target="#registrarse-cliente" >Crear Cuenta</a>
                   <a href="" data-toggle="modal" data-target="#inicio-cliente">Iniciar Sesión </a>              
                 </div>
@@ -102,8 +102,8 @@
     </div>
   </div>
 
-  <div class="container">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="container fixed_2">
+    <div id="carouselExampleControls" class="carousel slide fixed_2" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img  class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-photo-grapher-1548027.jpg" alt="First slide">
