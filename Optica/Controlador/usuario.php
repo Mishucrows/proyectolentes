@@ -34,6 +34,28 @@ class Usuario extends Controlador{
         }
     }
 
+    function registrarCliente(){
+        parent::cargarvista("html/agregarcliente");
+    }
+
+    function registrarcontroladorCliente(){
+        $nombre=$_POST['nombre-cliente'];
+        $apellido=$_POST['apellido-cliente'];
+        $email=$_POST['correo-cliente'];
+        $contrasena=$_POST['contrasena-cliente'];
+        $nombreUsuario=$_POST['nombre-usuario'];
+        $tipoUsuario="Cliente";
+        // instancia del modelo
+        $registro = new CusuarioModel();
+        $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }
+        else{
+            echo "No se ha podido guardar";
+        }
+    }
+
     function mostrarcontrolador(){
         $registro = new CusuarioModel();
         $consulta = $registro->mostrar();
@@ -41,8 +63,9 @@ class Usuario extends Controlador{
     }
 
     function eliminarControlador(){
-        $registro = new CusuarioModel();
         $id = $_REQUEST['idUsuario'];
+        $registro = new CusuarioModel();
+
         $consulta = $registro->eliminar($id);
         if ($consulta == "ok"){
             header("Location: ".URL."usuario/mostrarcontrolador");
