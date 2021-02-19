@@ -4,12 +4,17 @@ include("./Modelo/productos.modelo.php");
 
 class Productos extends Controlador
 {
-    function __constructor(){
-        parent::__constructor();
+    function __construct()
+    {
+        parent:: __construct();
     }
+
     function index(){
         //cargar vista
-        parent::cargarvista("html/adminagregarproductos");
+        $consulta = new ProductoModelo();
+        $result  = $consulta->mostrar();
+        parent::cargarvista("html/adminproductos",$result);
+
     }
     function ingresarProdu(){
         //verificar nombre de variable aun no existe (como ella :'v)
@@ -32,11 +37,9 @@ class Productos extends Controlador
             echo $result;
         }
     }
-    
-    function mostrarcontrolador(){
-        $consulta = new ProductoModelo();
-        $result  = $consulta->mostrar();
-        parent::cargarvista("html/adminproductos.php",$consulta);
+    function agregar(){
+        parent::cargarvista("html/adminagregarproductos");
     }
+
 
 }

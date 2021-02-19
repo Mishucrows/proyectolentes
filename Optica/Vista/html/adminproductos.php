@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/adminmenu.css">
-    <link rel="stylesheet" href="../css/directorios.css">
+        <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
+    <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <title>Administrar Usuarios</title>
 
 </head>
 
 <body>
-    <div id="menu"></div>
+    <?php include "menu.php" ?>
     <div class="container">
         <div class="h1">DIRECTORIO DE PRODUCTOS</div>
         <div class="row justify-content-end">
-            <a href="adminagregarproductos.html" type="button" class="btn btn-primary col-2">
+            <a href="<?php echo URL?>productos/agregar" type="button" class="btn btn-primary col-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -46,6 +46,7 @@
                         <th scope="col">Precio:</th>
                         <th scope="col">Material</th>
                         <th scope="col">sexo:</th>
+                        <th scope="col">opciones:</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -91,7 +92,7 @@
         
 
     </div>
-    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo URL ?>vista/js/jquery-3.2.1.min.js"></script>
     <script>
         $("#menu").load("adminmenu.html header");
     </script>
