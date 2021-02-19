@@ -88,11 +88,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="" name="form-registro">
+          <form method= "post" action="<?php echo URL?>ingreso/loginc/" name="form-registro">
             <label for="nombre-usuario"> Nombre de Usuario</label>
-            <p><input type="text" id="nombre-usuario"> </input> </p>          
-            <label for="contraseña-cliente">Contraseña</label>
-            <p><input type="password" id="contraseña-cliente"> </input></p>  
+            <p><input type="text" id="nombre-usuario" name="nombre_usuario"> </input> </p>          
+            <label for="contraseña-cliente" >Contraseña</label>
+            <p><input type="password" id="contraseña-cliente" name="contraseña_cliente"> </input></p>  
             <p><a href="">Olvidaste tu Contraseña?</a></p>            
             <input type="submit" value="Ingresar" class="btn btn-primary"></input>
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
