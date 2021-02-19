@@ -74,6 +74,9 @@ class Usuario extends Controlador{
         }
 
     }
+    function editar(){
+        parent::cargarvista('html/admineditarusuarios');
+    }
 
 }
 ?>
