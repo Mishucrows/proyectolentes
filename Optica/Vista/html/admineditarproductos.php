@@ -99,7 +99,7 @@
                     </div>
         </div>
         <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminproductos.html">CANCELAR</a>
+        <a class="btn btn-dark" href="<?php echo URL; ?>/productos">CANCELAR</a>
         </form>
     </div>
     </div>

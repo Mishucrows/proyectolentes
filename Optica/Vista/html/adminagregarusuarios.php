@@ -100,7 +100,7 @@
                     </div>
         </div>
         <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="<?php echo URL ?>/usuario/mostrarcontrolador">CANCELAR</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>/usuario">CANCELAR</a>
         </form>
     </div>
     </div>
