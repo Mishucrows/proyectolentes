@@ -87,7 +87,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="" name="form-registro">
+          <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST">
             <label for="nombre-usuario"> Nombre de Usuario</label>
             <p><input type="text" id="nombre-usuario"> </input> </p>
             <label for="nombre-cliente"> Nombre </label>
