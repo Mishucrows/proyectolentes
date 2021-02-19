@@ -30,7 +30,7 @@ class Usuario extends Controlador{
             header("Location: ".URL."usuario/mostrarcontrolador");
         }
         else{
-            echo "no se ha podido guardar";
+            echo "No se ha podido guardar";
         }
     }
 
@@ -38,6 +38,18 @@ class Usuario extends Controlador{
         $registro = new CusuarioModel();
         $consulta = $registro->mostrar();
         parent::cargarvista("html/adminusuarios",$consulta);
+    }
+
+    function eliminarControlador(){
+        $id = $_REQUEST['idUsuario'];
+        $registro = new CusuarioModel();
+        $consulta = $registro->eliminar($id);
+        if ($consulta == "ok"){
+            header("Location: http://localhost/Optica/index.php?url=usuario/mostrarcontrolador");
+        }else{
+            echo "No se ha podido eliminar el registro";
+        }
+
     }
 }
 ?>
