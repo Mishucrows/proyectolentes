@@ -14,6 +14,10 @@ header{
   height: 200px;
 }
 
+.navbar{
+  background-color: #151C2B;
+  height: 80px;
+}
 
 header,
 section {
@@ -36,10 +40,6 @@ header a {
   color: whitesmoke;
 }
 
-header img{
-  width: 640px;
-  height: 426px;
-}
 
 #logo{
   font-size: 32px;
