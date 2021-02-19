@@ -34,7 +34,7 @@ class Usuario extends Controlador{
         }
     }
 
-    function registrarCliente(){
+    function registrarcliente(){
         parent::cargarvista("html/agregarcliente");
     }
 
